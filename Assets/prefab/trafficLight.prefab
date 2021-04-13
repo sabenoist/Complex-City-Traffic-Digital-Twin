@@ -142,7 +142,7 @@ GameObject:
   - component: {fileID: 7148989973419525460}
   - component: {fileID: 7148989973419525463}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: LightBulb
   m_TagString: trafficLight1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
