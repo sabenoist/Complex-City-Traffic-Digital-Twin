@@ -21,18 +21,23 @@ public class trafficControl : MonoBehaviour
         {
             if (light[i].GetComponent<Renderer>().material.color == Color.red)
             {
-                stop();
+                // stop();  
+                obstacle[i].gameObject.SetActive(true);
+
                 Debug.Log("red");
             }
 
             // if(light.GetComponent<Renderer>().material.color == Color.green)
             else
             {
-                go();
+                // go();
+                obstacle[i].gameObject.SetActive(false);
+
                 Debug.Log("green");
             }
         }
     }
+    /*
     void stop()
     {
         //UnityEngine.AI.NavMeshObstacle obstacle = GetComponent<UnityEngine.AI.NavMeshObstacle>();
@@ -40,7 +45,7 @@ public class trafficControl : MonoBehaviour
         {
             obstacle[i].gameObject.SetActive(true);
         }
-
+        
     }
 
     void go()
@@ -51,7 +56,7 @@ public class trafficControl : MonoBehaviour
             obstacle[i].gameObject.SetActive(false);
         }
     }
-
+    */
 
 
 
