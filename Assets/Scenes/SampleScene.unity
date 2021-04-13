@@ -698,6 +698,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: trafficLight (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7148989971575036590, guid: 2ea79fd134627a24983c94c4e0c04b71, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7148989971575036591, guid: 2ea79fd134627a24983c94c4e0c04b71, type: 3}
       propertyPath: m_RootOrder
       value: 40
@@ -829,6 +833,10 @@ PrefabInstance:
     - target: {fileID: 7148989971575036590, guid: 2ea79fd134627a24983c94c4e0c04b71, type: 3}
       propertyPath: m_Name
       value: trafficLight (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7148989971575036590, guid: 2ea79fd134627a24983c94c4e0c04b71, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7148989971575036591, guid: 2ea79fd134627a24983c94c4e0c04b71, type: 3}
       propertyPath: m_RootOrder
@@ -1976,6 +1984,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: trafficLight (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7148989971575036590, guid: 2ea79fd134627a24983c94c4e0c04b71, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7148989971575036591, guid: 2ea79fd134627a24983c94c4e0c04b71, type: 3}
       propertyPath: m_RootOrder
       value: 38
@@ -3016,6 +3028,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: obstacle(3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4885962535544818836, guid: 6c8b13582ee6d624e8846ecea3b8509b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c8b13582ee6d624e8846ecea3b8509b, type: 3}
 --- !u!1 &620458241
@@ -3612,6 +3628,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: obstacle (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4885962535544818836, guid: 6c8b13582ee6d624e8846ecea3b8509b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c8b13582ee6d624e8846ecea3b8509b, type: 3}
 --- !u!1 &899704967 stripped
@@ -4150,6 +4170,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: obstacle(1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4885962535544818836, guid: 6c8b13582ee6d624e8846ecea3b8509b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c8b13582ee6d624e8846ecea3b8509b, type: 3}
 --- !u!1001 &1346212249
@@ -4242,8 +4266,8 @@ Mesh:
     firstVertex: 0
     vertexCount: 12
     localAABB:
-      m_Center: {x: 28.969717, y: -0.000007360564, z: -22.714085}
-      m_Extent: {x: 37.132656, y: 0.000010341421, z: 47.609013}
+      m_Center: {x: 28.969717, y: -0.0000075625517, z: -22.714085}
+      m_Extent: {x: 37.132656, y: 0.000010543409, z: 47.609013}
   m_Shapes:
     vertices: []
     shapes: []
@@ -4286,10 +4310,6 @@ Mesh:
       format: 0
       dimension: 2
     - stream: 0
-      offset: 64
-      format: 0
-      dimension: 2
-    - stream: 0
       offset: 0
       format: 0
       dimension: 0
@@ -4321,8 +4341,12 @@ Mesh:
       offset: 0
       format: 0
       dimension: 0
-    m_DataSize: 864
-    _typelessdata: 72068442183a5ab7ca9ccd406ad28a330000803f5ec727340000803f6ad28ab300000000000080bf83c02a3f83c02a3f83c02a3f0000803f72068442ca9ccd40cf694b3f9b3e453f62b0ef41bfd838b753b609415dba64340000803fd6677d330000803f5dba64b400000000000080bf83c02a3f83c02a3f83c02a3f0000803f62b0ef4153b609411f37513f66fecf3ec574414220e852b7cf28c741031075330000803febb404330000803f031075b3ecb4041b000080bf83c02a3f83c02a3f83c02a3f0000803fc5744142cf28c74184447b3f3dac173fc3be5c42a36793b67b18abc12c7e88b10000803ff75c9bb30000803f2c7e8831f75c1b9b000080bf83c02a3f83c02a3f83c02a3f0000803fc3be5c427b18abc13984033fee1d293f6992f641032491b7305e3ac2a7aa0bb30000803fdadf95b40000803fa7aa0b3390cc6f1c000080bf83c02a3f83c02a3f83c02a3f0000803f6992f641305e3ac2fdd8843e89f5d33e51c93d413a1946b76da58cc259d9be330000803f005e2c340000803f59d9beb300000000000080bf83c02a3f83c02a3f83c02a3f0000803f51c93d416da58cc20bd7a33c1a52633e659b02c19dc45eb7524f48c28633fd330000803fe65430b40000803f8633fdb300000000000080bf83c02a3f83c02a3f83c02a3f0000803f659b02c1524f48c20951663e0bd7a33c673ddb40b2f85db568d0a0c1cae938340000803fb0cf45b40000803fcae938b400000000000080bf83c02a3f83c02a3f83c02a3f0000803f673ddb4068d0a0c1bd0d073f805c303e6a34844213061ab7536c39c2a46175b40000803f46d185b40000803fa461753446d1851d000080bf83c02a3f83c02a3f83c02a3f0000803f6a348442536c39c253c2853e9b3e453f3bfb3d42b97e94b79de985c26faf75b40000803fe43e5eb40000803f6faf7534e43e5e1d000080bf83c02a3f83c02a3f83c02a3f0000803f3bfb3d429de985c25bc25a3d8605153f314490c0bd0a4836d12f78408c55e5340000803fa7c324b40000803f8c55e5b4a7c3241e000080bf83c02a3f83c02a3f83c02a3f0000803f314490c0d12f78404122453f27fa6c3de1eb7241a2d32135a073b941c5f5f2340000803fcab2b5b40000803fc5f5f2b4cab2b51e000080bf83c02a3f83c02a3f83c02a3f0000803fe1eb7241a073b94134fb763f08aa833e
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 768
+    _typelessdata: 72068442183a5ab7ca9ccd403b0e11b30000803f27789f330000803f3b0e113327789f1b000080bf83c02a3f83c02a3f83c02a3f0000803f72068442ca9ccd4062b0ef410b9a80b7e382aa41d83ca0340000803f133170b30000803fd83ca0b44227c09c000080bf83c02a3f83c02a3f83c02a3f0000803f62b0ef41e382aa41c574414220e852b7cf28c741d29903b40000803fe71d17b40000803fd299033400000000000080bf83c02a3f83c02a3f83c02a3f0000803fc5744142cf28c741739d6942597798b67918abc1300c00330000803fe0670fb10000803f300c00b300000000000080bf83c02a3f83c02a3f83c02a3f0000803f739d69427918abc16692f64141e297b7eee279c2ba10c8310000803f964a72b40000803fba10c8b145d5c11b000080bf83c02a3f83c02a3f83c02a3f0000803f6692f641eee279c251c93d413a1946b76da58cc2db2266340000803fd2cd98340000803fdb2266b400000000000080bf83c02a3f83c02a3f83c02a3f0000803f51c93d416da58cc2659b02c19dc45eb7524f48c23541ca330000803f8859c8b30000803f3541cab300000000000080bf83c02a3f83c02a3f83c02a3f0000803f659b02c1524f48c28599964006839e3568d0a0c196c431340000803f37a3e6b30000803f96c431b400000000000080bf83c02a3f83c02a3f83c02a3f0000803f8599964068d0a0c16a34844213061ab7536c39c2ada709b40000803f5da892b40000803fada7093400000000000080bf83c02a3f83c02a3f83c02a3f0000803f6a348442536c39c23bfb3d42b97e94b79de985c2e515eab30000803f4a38a9b40000803fe515ea3300000000000080bf83c02a3f83c02a3f83c02a3f0000803f3bfb3d429de985c2314490c0bd0a4836d12f78404eff41350000803ff034cbb40000803f4eff41b500000000000080bf83c02a3f83c02a3f83c02a3f0000803f314490c0d12f7840e1eb7241a2d32135a073b9418a0882350000803f8b3768b50000803f8a0882b58b37e89f000080bf83c02a3f83c02a3f83c02a3f0000803fe1eb7241a073b941
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 0
@@ -4376,8 +4400,8 @@ Mesh:
       m_BitSize: 0
     m_UVInfo: 0
   m_LocalAABB:
-    m_Center: {x: 28.969717, y: -0.000007360564, z: -22.714085}
-    m_Extent: {x: 37.132656, y: 0.000010341421, z: 47.609013}
+    m_Center: {x: 28.969717, y: -0.0000075625517, z: -22.714085}
+    m_Extent: {x: 37.132656, y: 0.000010543409, z: 47.609013}
   m_MeshUsageFlags: 0
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
@@ -6059,44 +6083,44 @@ MonoBehaviour:
   m_Positions:
   - {x: -4.508324, y: 0.0000029808573, z: 3.8779185}
   - {x: 15.182588, y: 0.0000006028514, z: 23.181458}
-  - {x: 29.961124, y: -0.00001101772, z: 8.607013}
+  - {x: 29.961124, y: -0.000015330521, z: 21.31391}
   - {x: 48.364033, y: -0.000012571021, z: 24.894926}
   - {x: 66.01259, y: -0.000013007339, z: 6.4253893}
-  - {x: 55.18629, y: -0.0000043930063, z: -21.386953}
+  - {x: 58.40376, y: -0.000004543847, z: -21.38695}
   - {x: 66.10237, y: -0.00000918053, z: -46.355785}
   - {x: 47.495342, y: -0.000017701985, z: -66.956276}
-  - {x: 30.82149, y: -0.000017302116, z: -46.59198}
+  - {x: 30.821484, y: -0.00001810596, z: -62.47161}
   - {x: 11.8616495, y: -0.000011807593, z: -70.3231}
   - {x: -8.162938, y: -0.000013278009, z: -50.07746}
-  - {x: 6.8512454, y: -0.00000082690815, z: -20.10176}
+  - {x: 4.70624, y: 0.000001181005, z: -20.10176}
   m_Textures0:
   - {x: -4.508324, y: 3.8779185}
   - {x: 15.182588, y: 23.181458}
-  - {x: 29.961124, y: 8.607013}
+  - {x: 29.961124, y: 21.31391}
   - {x: 48.364033, y: 24.894926}
   - {x: 66.01259, y: 6.4253893}
-  - {x: 55.18629, y: -21.386953}
+  - {x: 58.40376, y: -21.38695}
   - {x: 66.10237, y: -46.355785}
   - {x: 47.495342, y: -66.956276}
-  - {x: 30.82149, y: -46.59198}
+  - {x: 30.821484, y: -62.47161}
   - {x: 11.8616495, y: -70.3231}
   - {x: -8.162938, y: -50.07746}
-  - {x: 6.8512454, y: -20.10176}
+  - {x: 4.70624, y: -20.10176}
   m_Textures2: []
   m_Textures3: []
   m_Tangents:
-  - {x: 1, y: -0.00000042716817, z: 8.722548e-21, w: -1}
-  - {x: 1, y: -0.00000045254833, z: 1.9238066e-20, w: -1}
-  - {x: 1, y: -0.00000021301953, z: 0, w: -1}
-  - {x: 1, y: -0.00000005705807, z: 1.0977243e-22, w: -1}
-  - {x: 1, y: -0.000000064644, z: 0, w: -1}
-  - {x: 1, y: 0.000000003972465, z: -1.2851338e-22, w: -1}
-  - {x: 1, y: 0.00000022852925, z: 3.542119e-21, w: -1}
-  - {x: 1, y: 0.00000022881225, z: 2.941397e-21, w: -1}
-  - {x: 1, y: 0.000000032518667, z: 7.9342857e-22, w: -1}
-  - {x: 1, y: -0.000000088871, z: 0, w: -1}
-  - {x: 1, y: -0.000000117906026, z: 0, w: -1}
-  - {x: 1, y: -0.00000017221387, z: 0, w: -1}
+  - {x: 1, y: -0.0000007226962, z: 0, w: -1}
+  - {x: 1, y: -0.000000968824, z: -9.834771e-20, w: -1}
+  - {x: 1, y: -0.00000029846592, z: -1.2715642e-21, w: -1}
+  - {x: 1, y: 0.00000012256285, z: 0, w: -1}
+  - {x: 1, y: 0.000000033773386, z: 2.638199e-22, w: -1}
+  - {x: 1, y: -0.000000029813407, z: 0, w: -1}
+  - {x: 1, y: 0.0000001282012, z: 0, w: -1}
+  - {x: 1, y: 0.00000010900457, z: 0, w: -1}
+  - {x: 1, y: -0.0000000058226677, z: 3.2066994e-22, w: -1}
+  - {x: 1, y: -0.000000214331, z: 0, w: -1}
+  - {x: 1, y: -0.00000009418219, z: 0, w: -1}
+  - {x: 1, y: -0.00000016555927, z: 0, w: -1}
   m_Colors:
   - {r: 0.667, g: 0.667, b: 0.667, a: 1}
   - {r: 0.667, g: 0.667, b: 0.667, a: 1}
@@ -7914,6 +7938,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: obstacle
       objectReference: {fileID: 0}
+    - target: {fileID: 4885962535544818836, guid: 6c8b13582ee6d624e8846ecea3b8509b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c8b13582ee6d624e8846ecea3b8509b, type: 3}
 --- !u!1001 &6106511357001208799
@@ -8057,6 +8085,10 @@ PrefabInstance:
     - target: {fileID: 7148989971575036590, guid: 2ea79fd134627a24983c94c4e0c04b71, type: 3}
       propertyPath: m_Name
       value: trafficLight
+      objectReference: {fileID: 0}
+    - target: {fileID: 7148989971575036590, guid: 2ea79fd134627a24983c94c4e0c04b71, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7148989971575036591, guid: 2ea79fd134627a24983c94c4e0c04b71, type: 3}
       propertyPath: m_RootOrder
