@@ -2735,6 +2735,26 @@ PrefabInstance:
       propertyPath: goalObject
       value: 
       objectReference: {fileID: 463539590}
+    - target: {fileID: 4636880191142197845, guid: c6a25420c8b21cc42b74f6641f795b56, type: 3}
+      propertyPath: allSpawnPoints.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4636880191142197845, guid: c6a25420c8b21cc42b74f6641f795b56, type: 3}
+      propertyPath: allSpawnPoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 334986935}
+    - target: {fileID: 4636880191142197845, guid: c6a25420c8b21cc42b74f6641f795b56, type: 3}
+      propertyPath: allSpawnPoints.Array.data[1]
+      value: 
+      objectReference: {fileID: 397265582}
+    - target: {fileID: 4636880191142197845, guid: c6a25420c8b21cc42b74f6641f795b56, type: 3}
+      propertyPath: allSpawnPoints.Array.data[2]
+      value: 
+      objectReference: {fileID: 1513118874}
+    - target: {fileID: 4636880191142197845, guid: c6a25420c8b21cc42b74f6641f795b56, type: 3}
+      propertyPath: allSpawnPoints.Array.data[3]
+      value: 
+      objectReference: {fileID: 1589723589}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6a25420c8b21cc42b74f6641f795b56, type: 3}
 --- !u!1 &463539590 stripped
@@ -5085,6 +5105,26 @@ PrefabInstance:
       propertyPath: goalObject
       value: 
       objectReference: {fileID: 1282609569}
+    - target: {fileID: 4636880191142197845, guid: c6a25420c8b21cc42b74f6641f795b56, type: 3}
+      propertyPath: allSpawnPoints.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4636880191142197845, guid: c6a25420c8b21cc42b74f6641f795b56, type: 3}
+      propertyPath: allSpawnPoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 334986935}
+    - target: {fileID: 4636880191142197845, guid: c6a25420c8b21cc42b74f6641f795b56, type: 3}
+      propertyPath: allSpawnPoints.Array.data[1]
+      value: 
+      objectReference: {fileID: 397265582}
+    - target: {fileID: 4636880191142197845, guid: c6a25420c8b21cc42b74f6641f795b56, type: 3}
+      propertyPath: allSpawnPoints.Array.data[2]
+      value: 
+      objectReference: {fileID: 1513118874}
+    - target: {fileID: 4636880191142197845, guid: c6a25420c8b21cc42b74f6641f795b56, type: 3}
+      propertyPath: allSpawnPoints.Array.data[3]
+      value: 
+      objectReference: {fileID: 1589723589}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6a25420c8b21cc42b74f6641f795b56, type: 3}
 --- !u!1 &1447881684
@@ -6745,6 +6785,26 @@ PrefabInstance:
       propertyPath: goalObject
       value: 
       objectReference: {fileID: 1860652365}
+    - target: {fileID: 4636880191142197845, guid: c6a25420c8b21cc42b74f6641f795b56, type: 3}
+      propertyPath: allSpawnPoints.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4636880191142197845, guid: c6a25420c8b21cc42b74f6641f795b56, type: 3}
+      propertyPath: allSpawnPoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 334986935}
+    - target: {fileID: 4636880191142197845, guid: c6a25420c8b21cc42b74f6641f795b56, type: 3}
+      propertyPath: allSpawnPoints.Array.data[1]
+      value: 
+      objectReference: {fileID: 397265582}
+    - target: {fileID: 4636880191142197845, guid: c6a25420c8b21cc42b74f6641f795b56, type: 3}
+      propertyPath: allSpawnPoints.Array.data[2]
+      value: 
+      objectReference: {fileID: 1513118874}
+    - target: {fileID: 4636880191142197845, guid: c6a25420c8b21cc42b74f6641f795b56, type: 3}
+      propertyPath: allSpawnPoints.Array.data[3]
+      value: 
+      objectReference: {fileID: 1589723589}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6a25420c8b21cc42b74f6641f795b56, type: 3}
 --- !u!1 &1860652365 stripped
@@ -7893,6 +7953,26 @@ PrefabInstance:
       propertyPath: goalObject
       value: 
       objectReference: {fileID: 2001565144}
+    - target: {fileID: 4636880191142197845, guid: c6a25420c8b21cc42b74f6641f795b56, type: 3}
+      propertyPath: allSpawnPoints.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4636880191142197845, guid: c6a25420c8b21cc42b74f6641f795b56, type: 3}
+      propertyPath: allSpawnPoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 334986935}
+    - target: {fileID: 4636880191142197845, guid: c6a25420c8b21cc42b74f6641f795b56, type: 3}
+      propertyPath: allSpawnPoints.Array.data[1]
+      value: 
+      objectReference: {fileID: 397265582}
+    - target: {fileID: 4636880191142197845, guid: c6a25420c8b21cc42b74f6641f795b56, type: 3}
+      propertyPath: allSpawnPoints.Array.data[2]
+      value: 
+      objectReference: {fileID: 1513118874}
+    - target: {fileID: 4636880191142197845, guid: c6a25420c8b21cc42b74f6641f795b56, type: 3}
+      propertyPath: allSpawnPoints.Array.data[3]
+      value: 
+      objectReference: {fileID: 1589723589}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6a25420c8b21cc42b74f6641f795b56, type: 3}
 --- !u!1001 &4885962536009967246
