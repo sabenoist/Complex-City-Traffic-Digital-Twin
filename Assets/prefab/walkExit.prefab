@@ -58,5 +58,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 7578156760010761457, guid: ebafffe104817664d8b48441a64b3f15, type: 3}
-  goalObject: {fileID: 0}
-  spawn: {fileID: 0}
+  goalObject: {fileID: 3968054346067537021}
+  allSpawnPoints: []
