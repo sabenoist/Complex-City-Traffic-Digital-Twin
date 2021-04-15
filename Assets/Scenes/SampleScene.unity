@@ -5380,6 +5380,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6106511357934363091, guid: 4ee36a588ee579d4999dbc71001be763, type: 3}
     - target: {fileID: 7396852282637939819, guid: 5a8a26405eae8c747a9d30e165a03c66, type: 3}
+      propertyPath: agent1
+      value: 
+      objectReference: {fileID: 6106511357934363091, guid: 4ee36a588ee579d4999dbc71001be763, type: 3}
+    - target: {fileID: 7396852282637939819, guid: 5a8a26405eae8c747a9d30e165a03c66, type: 3}
+      propertyPath: agent2
+      value: 
+      objectReference: {fileID: 314569036295187181, guid: 8f5731b22cb11c04189a6efc1324cad0, type: 3}
+    - target: {fileID: 7396852282637939819, guid: 5a8a26405eae8c747a9d30e165a03c66, type: 3}
       propertyPath: vehicle
       value: 
       objectReference: {fileID: 6106511357934363091, guid: 4ee36a588ee579d4999dbc71001be763, type: 3}
@@ -7451,6 +7459,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6106511357934363091, guid: 4ee36a588ee579d4999dbc71001be763, type: 3}
     - target: {fileID: 7396852282637939819, guid: 5a8a26405eae8c747a9d30e165a03c66, type: 3}
+      propertyPath: agent1
+      value: 
+      objectReference: {fileID: 6106511357934363091, guid: 4ee36a588ee579d4999dbc71001be763, type: 3}
+    - target: {fileID: 7396852282637939819, guid: 5a8a26405eae8c747a9d30e165a03c66, type: 3}
+      propertyPath: agent2
+      value: 
+      objectReference: {fileID: 314569036295187181, guid: 8f5731b22cb11c04189a6efc1324cad0, type: 3}
+    - target: {fileID: 7396852282637939819, guid: 5a8a26405eae8c747a9d30e165a03c66, type: 3}
       propertyPath: vehicle
       value: 
       objectReference: {fileID: 6106511357934363091, guid: 4ee36a588ee579d4999dbc71001be763, type: 3}
@@ -7543,6 +7559,14 @@ PrefabInstance:
       propertyPath: agent
       value: 
       objectReference: {fileID: 6106511357934363091, guid: 4ee36a588ee579d4999dbc71001be763, type: 3}
+    - target: {fileID: 7396852282637939819, guid: 5a8a26405eae8c747a9d30e165a03c66, type: 3}
+      propertyPath: agent1
+      value: 
+      objectReference: {fileID: 6106511357934363091, guid: 4ee36a588ee579d4999dbc71001be763, type: 3}
+    - target: {fileID: 7396852282637939819, guid: 5a8a26405eae8c747a9d30e165a03c66, type: 3}
+      propertyPath: agent2
+      value: 
+      objectReference: {fileID: 314569036295187181, guid: 8f5731b22cb11c04189a6efc1324cad0, type: 3}
     - target: {fileID: 7396852282637939819, guid: 5a8a26405eae8c747a9d30e165a03c66, type: 3}
       propertyPath: vehicle
       value: 
@@ -8204,6 +8228,14 @@ PrefabInstance:
       propertyPath: agent
       value: 
       objectReference: {fileID: 6106511357934363091, guid: 4ee36a588ee579d4999dbc71001be763, type: 3}
+    - target: {fileID: 7396852282637939819, guid: 5a8a26405eae8c747a9d30e165a03c66, type: 3}
+      propertyPath: agent1
+      value: 
+      objectReference: {fileID: 6106511357934363091, guid: 4ee36a588ee579d4999dbc71001be763, type: 3}
+    - target: {fileID: 7396852282637939819, guid: 5a8a26405eae8c747a9d30e165a03c66, type: 3}
+      propertyPath: agent2
+      value: 
+      objectReference: {fileID: 314569036295187181, guid: 8f5731b22cb11c04189a6efc1324cad0, type: 3}
     - target: {fileID: 7396852282637939819, guid: 5a8a26405eae8c747a9d30e165a03c66, type: 3}
       propertyPath: goalObject
       value: 
