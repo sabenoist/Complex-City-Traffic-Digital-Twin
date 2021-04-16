@@ -43,5 +43,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c11178ef6fff27741861044944e9e2a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 0}
-  goalObject: {fileID: 0}
+  agent1: {fileID: 314569036295187181, guid: 8f5731b22cb11c04189a6efc1324cad0, type: 3}
+  agent2: {fileID: 0}
+  allGoals: []

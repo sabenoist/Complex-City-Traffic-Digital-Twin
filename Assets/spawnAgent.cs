@@ -5,19 +5,19 @@ using UnityEngine;
 public class spawnAgent : MonoBehaviour
 {
     public GameObject agent1;
-    public GameObject agent2;
+    //public GameObject agent2;
     public GameObject[] allGoals;
 
     // Start is called before the first frame update
     void Start()
     {
-        Invoke("Spawn", (Random.Range(0, 10))); //call Spawnfunction after 2 seconds
+        Invoke("Spawn", (Random.Range(0, 20))); //call Spawnfunction after 2 seconds
     }
 
     // Update is called once per frame
    void Spawn()
     {
-        GameObject[] allAgents = { agent1, agent2 };
+        GameObject[] allAgents = { agent1 };
         int random_num = Random.Range(0, allAgents.Length);
         GameObject agent = allAgents[random_num];
         GameObject a = (GameObject)Instantiate(agent, this.transform.position, Quaternion.identity); //instantiate theh copy of vehical and store in varibal v
