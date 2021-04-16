@@ -11,7 +11,7 @@ public class spawnAgent : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Invoke("Spawn", (Random.Range(0, 20))); //call Spawnfunction after 2 seconds
+        Invoke("Spawn", (Random.Range(0, 25))); //call Spawnfunction after 2 seconds
     }
 
     // Update is called once per frame
