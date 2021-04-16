@@ -5,7 +5,7 @@ using UnityEngine;
 public class TrafficLight : MonoBehaviour
 {
     float redTime = 10f;
-    float allTime = 40f;
+    float allTime = 20f;
 
     public float initRedTime;
     public GameObject light;
