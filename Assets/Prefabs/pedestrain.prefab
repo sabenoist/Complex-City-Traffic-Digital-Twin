@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7578156760010761460}
   - component: {fileID: 7578156760010761459}
   - component: {fileID: 7578156760010761458}
+  - component: {fileID: 9097535442770444338}
   m_Layer: 0
   m_Name: pedestrain
   m_TagString: Untagged
@@ -150,3 +151,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goal: {fileID: 0}
+--- !u!114 &9097535442770444338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7578156760010761457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cac0698344d170f468dfe78e9084316d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  raycastObject: {fileID: 7578156760010761457}
