@@ -34,7 +34,7 @@ public class distanceDetect : MonoBehaviour
     //coming from north, direction is left, coming from 
     bool isClose()
     {
-        return Physics.Raycast(transform.position, transform.forward, 22);
+        return Physics.Raycast(transform.position, transform.forward, 25);
 
     }
 
