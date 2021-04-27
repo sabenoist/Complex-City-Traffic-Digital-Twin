@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class spawnAgent : MonoBehaviour
 {
-    public GameObject agent1;
+    //public GameObject agent1;
     //public GameObject agent2;
+    public GameObject[] allAgents;
     public GameObject[] allGoals;
 
     // Start is called before the first frame update
@@ -18,7 +19,7 @@ public class spawnAgent : MonoBehaviour
     // Update is called once per frame
    void Spawn()
     {
-        GameObject[] allAgents = { agent1 };
+        //GameObject[] allAgents = { agent1 };
         int random_num = Random.Range(0, allAgents.Length);
         GameObject agent = allAgents[random_num];
         GameObject a = (GameObject)Instantiate(agent, this.transform.position, Quaternion.identity); //instantiate theh copy of vehical and store in varibal v
