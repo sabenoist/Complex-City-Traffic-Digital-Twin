@@ -6,6 +6,7 @@ public class TrafficLightsControl : MonoBehaviour
 {
     public float greenTime;
     public float orangeTime;
+    public ArrayList stateQueue;
 
     public Material greenColor;
     public Material orangeColor;
@@ -52,18 +53,70 @@ public class TrafficLightsControl : MonoBehaviour
         StartCoroutine(ControlLights());
     }
 
-    IEnumerator ControlLights() {
-        while (true) {
-            StartCoroutine(StateOne());
-            yield return new WaitForSeconds(greenTime + orangeTime);
-            StartCoroutine(StateTwo());
-            yield return new WaitForSeconds(greenTime + orangeTime);
-            StartCoroutine(StateThree());
-            yield return new WaitForSeconds(greenTime + orangeTime);
-            StartCoroutine(StateFour());
-            yield return new WaitForSeconds(greenTime + orangeTime);
+    public void prioPedestrians(string pedestrianState) {
+        foreach (string state in stateQueue) {
+            if (state == pedestrianState) {
+                return;
+            }
         }
 
+        stateQueue.Insert(1, pedestrianState);
+    }
+
+    IEnumerator ControlLights() {
+        while (true) {
+            bool cycleEnd = false;
+            stateQueue = new ArrayList() {"one", "two", "three", "four"};
+
+            while (!cycleEnd) {
+                if (stateQueue[0] == "one") {
+                    StartCoroutine(StateOne());
+                } else if (stateQueue[0] == "two"){
+                    StartCoroutine(StateTwo());
+                } else if (stateQueue[0] == "three") {
+                    StartCoroutine(StateThree());
+                } else if (stateQueue[0] == "four") {
+                    StartCoroutine(StateFour());
+                } else if (stateQueue[0] == "pedestrian") {
+                    StartCoroutine(StatePedestrian());
+                }
+                yield return new WaitForSeconds(greenTime + orangeTime);
+
+                if (stateQueue.Count == 1) {
+                    cycleEnd = true;
+                } else {
+                    stateQueue.RemoveAt(0);
+                }
+            }
+        }
+    }
+
+    IEnumerator StatePedestrian() {
+        southPedestrianLight.GetComponent<Renderer>().material = greenColor;
+        southPedestrianObstacle.SetActive(false);
+
+        northPedestrianLight.GetComponent<Renderer>().material = greenColor;
+        northPedestrianObstacle.SetActive(false);
+
+        eastPedestrianLight.GetComponent<Renderer>().material = greenColor;
+        eastPedestrianObstacle.SetActive(false);
+
+        westPedestrianLight.GetComponent<Renderer>().material = greenColor;
+        westPedestrianObstacle.SetActive(false);
+
+        yield return new WaitForSeconds(greenTime + orangeTime);
+
+        southPedestrianLight.GetComponent<Renderer>().material = redColor;
+        southPedestrianObstacle.SetActive(true);
+
+        northPedestrianLight.GetComponent<Renderer>().material = redColor;
+        northPedestrianObstacle.SetActive(true);
+
+        eastPedestrianLight.GetComponent<Renderer>().material = redColor;
+        eastPedestrianObstacle.SetActive(true);
+
+        westPedestrianLight.GetComponent<Renderer>().material = redColor;
+        westPedestrianObstacle.SetActive(true);
     }
 
     IEnumerator StateOne()
