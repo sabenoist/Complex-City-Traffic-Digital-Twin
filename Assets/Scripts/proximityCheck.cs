@@ -69,20 +69,22 @@ public class proximityCheck : MonoBehaviour
             for (int i = 0; i < bus.Length; i++)
             {
 
-                if ((Vector3.Distance(bus[i].transform.position, pedestrian.transform.position) < 200) && (Vector3.Distance(bus[i].transform.position, busStation.transform.position) < 40))
+                if ((Vector3.Distance(bus[i].transform.position, pedestrian.transform.position) < 200) && (Vector3.Distance(bus[i].transform.position, busStation.transform.position) < 60))
                 {
-                    // AppButton[i].interactable = true;
-                   int busNo = bus[i].GetComponent <busNumber>().busNo;
-                    
-                    AppButton[busNo-1].gameObject.SetActive(true);
-                  
+
+                    {// AppButton[i].interactable = true;
+                        int busNo = bus[i].GetComponent<busNumber>().busNo;
+
+                        AppButton[busNo - 1].gameObject.SetActive(true);
+                    }
                     //BusDistance = Vector3.Distance(bus[i].transform.position, pedestrian.transform.position);
                     //Debug.Log(BusDistance);
                 }
-               // else //disable buttons if far from the bus
-               // {
-                //    AppButton[i].gameObject.SetActive(false);
-               // }
+                else
+                {
+                    int busNo = bus[i].GetComponent<busNumber>().busNo;
+                    AppButton[busNo - 1].gameObject.SetActive(false);
+                }
             }
 
         }
