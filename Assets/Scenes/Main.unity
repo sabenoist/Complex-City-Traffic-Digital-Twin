@@ -6771,6 +6771,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3968054346067537021, guid: 92e7d91da7ca7be4b963bc11ba3a3e43, type: 3}
   m_PrefabInstance: {fileID: 2075929302}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1235595301 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5835185706570510864, guid: 2c7f8e2beacb9934e81818e87a4d6bba, type: 3}
+  m_PrefabInstance: {fileID: 2232550036536211067}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1293614121 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7148989971575036590, guid: 2ea79fd134627a24983c94c4e0c04b71, type: 3}
@@ -9986,6 +9991,7 @@ MonoBehaviour:
   - {fileID: 1119651886}
   pedestrian: {fileID: 2101470255}
   bus: []
+  busStation: {fileID: 1235595301}
   BusDistance: 0
   AppButton:
   - {fileID: 63687554}

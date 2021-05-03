@@ -8,7 +8,8 @@ public class proximityCheck : MonoBehaviour
     public GameObject[] light;
     public GameObject pedestrian;
     public GameObject[] bus;
-  //  public GameObject[] busPrefab;
+    public GameObject busStation;
+    //  public GameObject[] busPrefab;
     //  public float LightDistance;
     public float BusDistance;
     public Button[] AppButton;
@@ -68,7 +69,7 @@ public class proximityCheck : MonoBehaviour
             for (int i = 0; i < bus.Length; i++)
             {
 
-                if (Vector3.Distance(bus[i].transform.position, pedestrian.transform.position) < 200)
+                if ((Vector3.Distance(bus[i].transform.position, pedestrian.transform.position) < 200) && (Vector3.Distance(bus[i].transform.position, busStation.transform.position) < 40))
                 {
                     // AppButton[i].interactable = true;
                    int busNo = bus[i].GetComponent <busNumber>().busNo;
