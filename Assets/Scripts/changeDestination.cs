@@ -9,7 +9,7 @@ public class changeDestination : MonoBehaviour
 
     //void OnCollisionEnter(Collision collision)
     //void OnTriggerEnter(Collider collider)
-    {
+    //{
         //collision.gameObject.SetActive(false);
         //Debug.Log("collision");
         //dT.changeGoal(); // this line calls the function in the 'driveTo'-script
