@@ -8380,6 +8380,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpawnCar (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 7396852282637939813, guid: 5a8a26405eae8c747a9d30e165a03c66, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7396852282637939818, guid: 5a8a26405eae8c747a9d30e165a03c66, type: 3}
       propertyPath: m_RootOrder
       value: 9
