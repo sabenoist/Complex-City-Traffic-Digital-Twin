@@ -542,15 +542,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 195565915040444217, guid: 8ba56afdbb5250e47a542cce84336945, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 304
+      value: 309.2
       objectReference: {fileID: 0}
     - target: {fileID: 195565915040444217, guid: 8ba56afdbb5250e47a542cce84336945, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -18
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 195565915040444217, guid: 8ba56afdbb5250e47a542cce84336945, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -284
+      value: -218.3
       objectReference: {fileID: 0}
     - target: {fileID: 195565915040444217, guid: 8ba56afdbb5250e47a542cce84336945, type: 3}
       propertyPath: m_LocalRotation.w
@@ -697,7 +697,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 271.6, y: -79.6}
+  m_AnchoredPosition: {x: 398.3, y: -108.4}
   m_SizeDelta: {x: -50, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &137158061
@@ -715,7 +715,7 @@ MonoBehaviour:
   m_Padding:
     m_Left: 0
     m_Right: 0
-    m_Top: 10
+    m_Top: 80
     m_Bottom: 0
   m_ChildAlignment: 1
   m_Spacing: 0
@@ -9868,7 +9868,7 @@ MonoBehaviour:
   bus: []
   busStation: {fileID: 1235595301}
   BusDistance: 0
-  buttonPrefab: {fileID: 1866050414203738458, guid: aaff809b1917a734c9358a383aad7e76, type: 3}
+  buttonPrefab: {fileID: 2294893698548031019, guid: 99014971a15044ba69cbcb2ca99dbc72, type: 3}
   buttonContainer: {fileID: 137158060}
   activeButtonTag: {fileID: 0}
   buttonList: []
