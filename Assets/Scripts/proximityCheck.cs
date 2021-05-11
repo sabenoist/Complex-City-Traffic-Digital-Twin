@@ -16,6 +16,8 @@ public class proximityCheck : MonoBehaviour
     private GameObject button;
     public GameObject activeButtonTag;
 
+    public GameObject[] buttonImage;
+
 
     public List<GameObject> buttonList = new List<GameObject>();
 
@@ -87,9 +89,13 @@ public class proximityCheck : MonoBehaviour
                         // AppButton[busNo - 1].gameObject.SetActive(true);
                         button = (GameObject)Instantiate(buttonPrefab);
                         button.tag = busNo.ToString();
-                        button.GetComponentInChildren<Text>().text = "bus No " + busNo;
+                        button.GetComponentInChildren<Text>().text = "Bus No. " + busNo;
                         button.transform.SetParent(buttonContainer, false);
                         buttonList.Add(button);
+                        buttonImage[i].SetActive(true);
+
+
+
                     }
 
                     //BusDistance = Vector3.Distance(bus[i].transform.position, pedestrian.transform.position);
@@ -102,6 +108,7 @@ public class proximityCheck : MonoBehaviour
                     if (activeButtonTag)
                     {
                         activeButtonTag.SetActive(false);
+                        buttonImage[i].SetActive(false);
                     }
                 }
             }
