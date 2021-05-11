@@ -40,23 +40,23 @@ public class proximityCheck : MonoBehaviour
         //for (int l = 0; l < light.Length; l++) 
         //LightDistance = Vector3.Distance(light[l].transform.position, pedestrian.transform.position);
 
-        if (Vector3.Distance(light[0].transform.position, pedestrian.transform.position) < 30)
+        if (Vector3.Distance(light[0].transform.position, pedestrian.transform.position) < 35)
         {
             // Debug.Log("close to light");
 
             checkDistance();
         }
-        else if (Vector3.Distance(light[1].transform.position, pedestrian.transform.position) < 30)
+        else if (Vector3.Distance(light[1].transform.position, pedestrian.transform.position) < 35)
         {
             checkDistance();
         }
-        else if (Vector3.Distance(light[2].transform.position, pedestrian.transform.position) < 30)
+        else if (Vector3.Distance(light[2].transform.position, pedestrian.transform.position) < 35)
         {
             // Debug.Log("close to light");
 
             checkDistance();
         }
-        else if (Vector3.Distance(light[3].transform.position, pedestrian.transform.position) < 30)
+        else if (Vector3.Distance(light[3].transform.position, pedestrian.transform.position) < 35)
         {
             // Debug.Log("close to light");
 
