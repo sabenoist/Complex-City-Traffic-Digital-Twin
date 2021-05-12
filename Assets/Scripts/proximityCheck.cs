@@ -17,8 +17,6 @@ public class proximityCheck : MonoBehaviour
     public GameObject activeButtonTag;
 
     public GameObject[] buttonImage;
-
-
     public List<GameObject> buttonList = new List<GameObject>();
 
     // Start is called before the first frame update
@@ -36,12 +34,12 @@ public class proximityCheck : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        bus = GameObject.FindGameObjectsWithTag("bus");
+        bus = GameObject.FindGameObjectsWithTag("bus"); //get bus and save in bus list when it is spawned in the scene
 
 
         //for (int l = 0; l < light.Length; l++) 
         //LightDistance = Vector3.Distance(light[l].transform.position, pedestrian.transform.position);
-
+        //check distance with traffic lights
         if (Vector3.Distance(light[0].transform.position, pedestrian.transform.position) < 35)
         {
             // Debug.Log("close to light");
@@ -70,13 +68,15 @@ public class proximityCheck : MonoBehaviour
         //  }
 
         // }//for loop 
+
+        //check if pedestrian is close to the bus and bus is at the station
         void checkDistance()
         {
 
             for (int i = 0; i < bus.Length; i++)
             {
                 int busNo = bus[i].GetComponent<busNumber>().busNo;
-                activeButtonTag = GameObject.FindGameObjectWithTag(busNo.ToString());
+                activeButtonTag = GameObject.FindGameObjectWithTag(busNo.ToString()); //find button with tag = bus number
                 if ((Vector3.Distance(bus[i].transform.position, pedestrian.transform.position) < 250) && (Vector3.Distance(bus[i].transform.position, busStation.transform.position) < 60))
                 {
 
@@ -84,17 +84,15 @@ public class proximityCheck : MonoBehaviour
 
                     // GameObject b = GameObject.FindGameObjectsWithTag("busNo");
 
-                    if (!activeButtonTag)
+                    if (!activeButtonTag) //if button for specific bus is not created
                     {
                         // AppButton[busNo - 1].gameObject.SetActive(true);
-                        button = (GameObject)Instantiate(buttonPrefab);
-                        button.tag = busNo.ToString();
-                        button.GetComponentInChildren<Text>().text = "Bus No. " + busNo;
-                        button.transform.SetParent(buttonContainer, false);
-                        buttonList.Add(button);
-                        buttonImage[i].SetActive(true);
-
-
+                        button = (GameObject)Instantiate(buttonPrefab); //instantiate button from prefab
+                        button.tag = busNo.ToString(); //set button tag == bus number
+                        button.GetComponentInChildren<Text>().text = "Bus No. " + busNo; //set button text == bus number
+                        button.transform.SetParent(buttonContainer, false); //place the button in the button panel
+                        buttonList.Add(button); //save theh button in the button list
+                        buttonImage[i].SetActive(true);  //display image
 
                     }
 
@@ -103,7 +101,6 @@ public class proximityCheck : MonoBehaviour
                 }
                 else
                 {
-
                     // AppButton[busNo - 1].gameObject.SetActive(false);
                     if (activeButtonTag)
                     {
