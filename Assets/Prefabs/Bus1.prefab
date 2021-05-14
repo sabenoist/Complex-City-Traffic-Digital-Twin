@@ -13,10 +13,10 @@ GameObject:
   - component: {fileID: 931523186216735820}
   - component: {fileID: 6038160969300228625}
   - component: {fileID: -6651062861092060551}
-  - component: {fileID: 1879642725874832525}
   - component: {fileID: -3314311058259240180}
   - component: {fileID: -2985257787436926698}
   - component: {fileID: 9066692146729850733}
+  - component: {fileID: -7201941437843939553}
   m_Layer: 0
   m_Name: Bus1
   m_TagString: bus
@@ -123,19 +123,6 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 1
   m_ObstacleAvoidanceType: 1
---- !u!114 &1879642725874832525
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4143748331903835179}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 425c1ba3357ede84d8c587870f814513, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  goal: {fileID: 0}
 --- !u!54 &-3314311058259240180
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -178,6 +165,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   busNo: 1
+--- !u!114 &-7201941437843939553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4143748331903835179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc98e1dd99f8fac4595f1c3de42429d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goal: {fileID: 8181887694368279528, guid: 6b15429bb6116f1418586ad734413f90, type: 3}
+  goal_2: {fileID: 2007511882519287143, guid: 761920d2da227504ea8e2a4b27c02665, type: 3}
 --- !u!1001 &8935628451308364514
 PrefabInstance:
   m_ObjectHideFlags: 0

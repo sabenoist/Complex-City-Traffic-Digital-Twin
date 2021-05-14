@@ -2,36 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class driveTo : MonoBehaviour
-{
-
-    public Transform goal;
-    // Start is called before the first frame update
-    void Start()
-    {
-        UnityEngine.AI.NavMeshAgent agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
-        agent.destination = goal.position;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-}
-
-/* THIS IS THE WORK YAZZ DID TRYING TO MAKE THE BUS HAVE TWO DESTINATIONS
- * 
- * 
- *
-public class driveTo : MonoBehaviour
+public class driveToBus : MonoBehaviour
 {
     // this is the old code
     //public Transform goal;
 
     // this is the new code, allowing for two goals for all vehicles
-    public Transform goal;
-    public Transform goal_2;
+    //public Transform goal;
+    //public Transform goal_2;
+
+    public GameObject goal;
+    public GameObject goal_2;
 
     // Start is called before the first frame update
     void Start()
@@ -43,7 +24,8 @@ public class driveTo : MonoBehaviour
 
         // this is the new code, making the first goal the goal of all vehicles
         UnityEngine.AI.NavMeshAgent agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
-        agent.destination = goal.position;
+        Transform goal_trans = goal.transform;
+        agent.destination = goal_trans.position;
     }
 
     // this is part of the new code,
@@ -53,9 +35,11 @@ public class driveTo : MonoBehaviour
     {
         Debug.Log("driveTo scrpit called!");
 
-        UnityEngine.AI.NavMeshAgent agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
-        agent.destination = goal_2.position;
-
+        UnityEngine.AI.NavMeshAgent a = GetComponent<UnityEngine.AI.NavMeshAgent>();
+        //Transform goal_2_trans = goal_2.transform;
+        //a.destination = goal_2_trans.position;
+        a.Warp(goal_2.transform.position);
+        a.speed = 25f;
     }
 
     // Update is called once per frame
@@ -63,4 +47,4 @@ public class driveTo : MonoBehaviour
     {
 
     }
-}*/
+}

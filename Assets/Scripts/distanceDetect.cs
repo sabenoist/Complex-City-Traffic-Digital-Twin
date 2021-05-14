@@ -17,7 +17,7 @@ public class distanceDetect : MonoBehaviour
     void Update()
     {
         
-        Debug.Log(isClose());
+        //Debug.Log(isClose());
   
         if (isClose())
         {
