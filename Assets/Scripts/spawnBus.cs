@@ -10,7 +10,8 @@ public class spawnBus : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Invoke("Spawn", (Random.Range(3, 10))); //call Spawnfunction after 2 seconds
+        //Invoke("Spawn", (Random.Range(3, 10))); 
+        Invoke("Spawn", 4);
     }
 
     // Update is called once per frame
