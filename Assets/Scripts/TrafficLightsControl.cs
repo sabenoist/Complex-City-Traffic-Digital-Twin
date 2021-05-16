@@ -77,8 +77,12 @@ public class TrafficLightsControl : MonoBehaviour
                     StartCoroutine(StateThree());
                 } else if (stateQueue[0] == "four") {
                     StartCoroutine(StateFour());
-                } else if (stateQueue[0] == "pedestrian") {
-                    StartCoroutine(StatePedestrian());
+                } else if (stateQueue[0] == "pedestrian_SW") {
+                    StartCoroutine(StatePedestrianSW());
+                } else if (stateQueue[0] == "pedestrian_SE") {
+                    StartCoroutine(StatePedestrianSE());
+                } else if (stateQueue[0] == "pedestrian_NW") {
+                    StartCoroutine(StatePedestrianNW());
                 }
                 yield return new WaitForSeconds(greenTime + orangeTime);
 
@@ -117,6 +121,108 @@ public class TrafficLightsControl : MonoBehaviour
 
         westPedestrianLight.GetComponent<Renderer>().material = redColor;
         westPedestrianObstacle.SetActive(true);
+    }
+
+    IEnumerator StatePedestrianSW() {
+        northPedestrianLight.GetComponent<Renderer>().material = greenColor;
+        eastPedestrianLight.GetComponent<Renderer>().material = greenColor;
+        westPedestrianLight.GetComponent<Renderer>().material = greenColor;
+
+        southRightLight.GetComponent<Renderer>().material = greenColor;
+
+        westPedestrianObstacle.SetActive(false);
+        northPedestrianObstacle.SetActive(false);
+
+        southRightObstacle.SetActive(false);
+
+        yield return new WaitForSeconds(greenTime);
+
+        northPedestrianLight.GetComponent<Renderer>().material = redColor;
+        eastPedestrianLight.GetComponent<Renderer>().material = redColor;
+        westPedestrianLight.GetComponent<Renderer>().material = redColor;
+
+        southRightLight.GetComponent<Renderer>().material = orangeColor;
+
+        westPedestrianObstacle.SetActive(true);
+        northPedestrianObstacle.SetActive(true);
+
+        southRightObstacle.SetActive(true);
+
+        yield return new WaitForSeconds(orangeTime);
+
+        southRightLight.GetComponent<Renderer>().material = redColor;
+    }
+
+    IEnumerator StatePedestrianSE() {
+        southPedestrianLight.GetComponent<Renderer>().material = greenColor;
+        eastPedestrianLight.GetComponent<Renderer>().material = greenColor;
+
+        southForwardLight.GetComponent<Renderer>().material = greenColor;
+        northRightLight.GetComponent<Renderer>().material = greenColor;
+        westRightLight.GetComponent<Renderer>().material = greenColor;
+
+        eastPedestrianObstacle.SetActive(false);
+
+        southForwardObstacle.SetActive(false);
+        northRightObstacle.SetActive(false);
+        westRightObstacle.SetActive(false);
+
+        yield return new WaitForSeconds(greenTime);
+
+        southPedestrianLight.GetComponent<Renderer>().material = redColor;
+        eastPedestrianLight.GetComponent<Renderer>().material = redColor;
+
+        southForwardLight.GetComponent<Renderer>().material = orangeColor;
+        northRightLight.GetComponent<Renderer>().material = orangeColor;
+        westRightLight.GetComponent<Renderer>().material = orangeColor;
+
+        eastPedestrianObstacle.SetActive(true);
+
+        southForwardObstacle.SetActive(true);
+        northRightObstacle.SetActive(true);
+        westRightObstacle.SetActive(true);
+
+        yield return new WaitForSeconds(orangeTime);
+
+        southForwardLight.GetComponent<Renderer>().material = redColor;
+        northRightLight.GetComponent<Renderer>().material = redColor;
+        westRightLight.GetComponent<Renderer>().material = redColor;
+    }
+
+    IEnumerator StatePedestrianNW() {
+        eastPedestrianLight.GetComponent<Renderer>().material = greenColor;
+        northPedestrianLight.GetComponent<Renderer>().material = greenColor;
+
+        westRightLight.GetComponent<Renderer>().material = greenColor;
+        southRightLight.GetComponent<Renderer>().material = greenColor;
+        eastForwardLight.GetComponent<Renderer>().material = greenColor;
+
+        northPedestrianObstacle.SetActive(false);
+
+        westRightObstacle.SetActive(false);
+        southRightObstacle.SetActive(false);
+        eastForwardObstacle.SetActive(false);
+
+        yield return new WaitForSeconds(greenTime);
+
+        eastPedestrianLight.GetComponent<Renderer>().material = redColor;
+        northPedestrianLight.GetComponent<Renderer>().material = redColor;
+
+        westRightLight.GetComponent<Renderer>().material = orangeColor;
+        southRightLight.GetComponent<Renderer>().material = orangeColor;
+        eastForwardLight.GetComponent<Renderer>().material = orangeColor;
+
+        northPedestrianObstacle.SetActive(true);
+
+        westRightObstacle.SetActive(true);
+        southRightObstacle.SetActive(true);
+        eastForwardObstacle.SetActive(true);
+
+        yield return new WaitForSeconds(orangeTime);
+
+        westRightLight.GetComponent<Renderer>().material = redColor;
+        southRightLight.GetComponent<Renderer>().material = redColor;
+        eastForwardLight.GetComponent<Renderer>().material = redColor;
     }
 
     IEnumerator StateOne()
