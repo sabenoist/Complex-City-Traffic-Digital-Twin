@@ -72,44 +72,41 @@ public class proximityCheck : MonoBehaviour
         //check if pedestrian is close to the bus and bus is at the station
         void checkDistance()
         {
+            try {
+                for (int i = 0; i < bus.Length; i++) {
+                    int busNo = bus[i].GetComponent<busNumber>().busNo;
+                    activeButtonTag = GameObject.FindGameObjectWithTag(busNo.ToString()); //find button with tag = bus number
+                    if ((Vector3.Distance(bus[i].transform.position, pedestrian.transform.position) < 250) && (Vector3.Distance(bus[i].transform.position, busStation.transform.position) < 60)) {
 
-            for (int i = 0; i < bus.Length; i++)
-            {
-                int busNo = bus[i].GetComponent<busNumber>().busNo;
-                activeButtonTag = GameObject.FindGameObjectWithTag(busNo.ToString()); //find button with tag = bus number
-                if ((Vector3.Distance(bus[i].transform.position, pedestrian.transform.position) < 250) && (Vector3.Distance(bus[i].transform.position, busStation.transform.position) < 60))
-                {
+                        // AppButton[i].interactable = true;
 
-                    // AppButton[i].interactable = true;
+                        // GameObject b = GameObject.FindGameObjectsWithTag("busNo");
 
-                    // GameObject b = GameObject.FindGameObjectsWithTag("busNo");
+                        if (!activeButtonTag) //if button for specific bus is not created
+                        {
+                            // AppButton[busNo - 1].gameObject.SetActive(true);
+                            button = (GameObject)Instantiate(buttonPrefab); //instantiate button from prefab
+                            button.tag = busNo.ToString(); //set button tag == bus number
+                            button.GetComponentInChildren<Text>().text = "Bus No. " + busNo; //set button text == bus number
+                            button.transform.SetParent(buttonContainer, false); //place the button in the button panel
+                            buttonList.Add(button); //save theh button in the button list
+                            buttonImage[i].SetActive(true);  //display image
 
-                    if (!activeButtonTag) //if button for specific bus is not created
-                    {
-                        // AppButton[busNo - 1].gameObject.SetActive(true);
-                        button = (GameObject)Instantiate(buttonPrefab); //instantiate button from prefab
-                        button.tag = busNo.ToString(); //set button tag == bus number
-                        button.GetComponentInChildren<Text>().text = "Bus No. " + busNo; //set button text == bus number
-                        button.transform.SetParent(buttonContainer, false); //place the button in the button panel
-                        buttonList.Add(button); //save theh button in the button list
-                        buttonImage[i].SetActive(true);  //display image
+                        }
 
-                    }
-
-                    //BusDistance = Vector3.Distance(bus[i].transform.position, pedestrian.transform.position);
-                    //Debug.Log(BusDistance);
-                }
-                else
-                {
-                    // AppButton[busNo - 1].gameObject.SetActive(false);
-                    if (activeButtonTag)
-                    {
-                        activeButtonTag.SetActive(false);
-                        buttonImage[i].SetActive(false);
+                        //BusDistance = Vector3.Distance(bus[i].transform.position, pedestrian.transform.position);
+                        //Debug.Log(BusDistance);
+                    } else {
+                        // AppButton[busNo - 1].gameObject.SetActive(false);
+                        if (activeButtonTag) {
+                            activeButtonTag.SetActive(false);
+                            buttonImage[i].SetActive(false);
+                        }
                     }
                 }
+            } catch(System.Exception e) {
+
             }
-
         }
 
 
