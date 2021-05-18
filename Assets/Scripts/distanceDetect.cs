@@ -21,12 +21,14 @@ public class distanceDetect : MonoBehaviour
   
         if (isClose())
         {
-           raycastObject.GetComponent<NavMeshAgent>().isStopped = true;
+            raycastObject.GetComponent<NavMeshAgent>().isStopped = true;
+            raycastObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
         }
 
         else if (isClose() == false)
         {
             raycastObject.GetComponent<NavMeshAgent>().isStopped = false;
+            raycastObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
         }
 
 
