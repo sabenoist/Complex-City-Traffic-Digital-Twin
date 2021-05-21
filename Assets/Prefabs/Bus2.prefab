@@ -135,7 +135,7 @@ NavMeshAgent:
   m_Height: 1
   m_BaseOffset: 0.5
   m_WalkableMask: 1
-  m_ObstacleAvoidanceType: 4
+  m_ObstacleAvoidanceType: 1
 --- !u!114 &1062621283704302108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,6 +179,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goal: {fileID: 8181887694368279528, guid: 6b15429bb6116f1418586ad734413f90, type: 3}
   goal_2: {fileID: 7842908847503161513, guid: 562aa258b4455404394c073b3896ca65, type: 3}
+  waitLonger: 0
 --- !u!1001 &4951440974454209077
 PrefabInstance:
   m_ObjectHideFlags: 0

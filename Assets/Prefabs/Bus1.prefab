@@ -179,6 +179,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goal: {fileID: 8181887694368279528, guid: 6b15429bb6116f1418586ad734413f90, type: 3}
   goal_2: {fileID: 2007511882519287143, guid: 761920d2da227504ea8e2a4b27c02665, type: 3}
+  waitLonger: 0
 --- !u!1001 &8935628451308364514
 PrefabInstance:
   m_ObjectHideFlags: 0

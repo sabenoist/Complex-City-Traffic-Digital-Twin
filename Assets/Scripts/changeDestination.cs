@@ -29,7 +29,7 @@ public class changeDestination : MonoBehaviour
         bus.GetComponent<driveToBus>().waitLonger = false;
 
         ownObject.GetComponent<BoxCollider>().enabled = false;
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(2);
         ownObject.GetComponent<BoxCollider>().enabled = true;
 
     }
